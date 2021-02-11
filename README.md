@@ -14,6 +14,12 @@ pequenos e grandes e o preço pode variar de acordo com o dia da semana.
 Apesar de se importar muito com seus cãezinhos, Eduardo quer gastar o mínimo possível. Desenvolva uma solução para encontrar o melhor petshop para levar os cães. O melhor petshop será o que oferecer menores preços, em caso de empate o melhor é o mais próximo
 do canil.
 
+## Premissas
+
+O projeto deve ser desenvolvido na linguagem C# e bibliotecas nativas,
+Foi usado o editor [Visual Studio]: (https://visualstudio.microsoft.com/pt-br/vs/community/),
+Tempo de realização de até 3 dias.
+
 ## Decisões de projeto:
 
 Optei por criar 2 Classes Petshop.cs e Pedido.cs:  
