@@ -23,8 +23,8 @@ namespace EscolhaPetShop
                     Distancia = 2.0,
                     DiaUtilPrecoPequeno = 20.0,
                     DiaUtilPrecoGrande = 40.0,
-                    FdsPrecoPequeno = 20.0 + 20.0 * 0.2,
-                    FdsPrecoGrande = 40 + 40 * 0.2
+                    FdsPrecoPequeno = 24,
+                    FdsPrecoGrande = 48
                 },
 
                 new PetShop {
@@ -62,7 +62,7 @@ namespace EscolhaPetShop
         {
             // Retorna o orçamento final
             var orcamento = orcamentoFinal.ToList();
-            Console.WriteLine($"\nO PetShop mais em conta para o dia escolhido é o {orcamento[0].NomePetShop} e o valor total é R${ orcamento[0].ValorTotal}");
+            Console.WriteLine($"\nO PetShop mais em conta para o dia escolhido é o {orcamento[0].NomePetShop} e o valor total é R${ orcamento[0].ValorTotal}.");
         }
 
         private static int LeituraQtdCaes(string tamanhoCao)
@@ -109,20 +109,18 @@ namespace EscolhaPetShop
                 pedidos.Add(pedido);
             };
 
-            
-            double menorValor = pedidos.Min(x => x.ValorTotal);
 
-            var listaMenorValor = pedidos.Where(x => x.ValorTotal == menorValor);
-
-            if (listaMenorValor.Count() > 1)
+            pedidos.Sort((p1, p2) =>
             {
-                var distanciaMinima = pedidos.Min(x => x.Distancia);
-                listaMenorValor = pedidos.Where(x => x.ValorTotal == menorValor && x.Distancia == distanciaMinima);
-                return listaMenorValor;
+                if(p1.ValorTotal != p2.ValorTotal)
+                {
+                    return (int) (p1.ValorTotal - p2.ValorTotal);
+                }
 
-            }
+                return (int) (p1.Distancia - p2.Distancia);
+            });
 
-            return listaMenorValor;
+            return pedidos;
         }
     }
 }
