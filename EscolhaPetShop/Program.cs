@@ -109,7 +109,7 @@ namespace EscolhaPetShop
                 pedidos.Add(pedido);
             };
 
-
+            // Ordena lista de pedidos
             pedidos.Sort((p1, p2) =>
             {
                 if(p1.ValorTotal != p2.ValorTotal)
