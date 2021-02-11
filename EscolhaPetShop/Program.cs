@@ -99,56 +99,25 @@ namespace EscolhaPetShop
         }
 
         public static IEnumerable<Pedido> FazerCalculo(List<PetShop> listPetShop, int qtdPequeno, int qtdGrande, DayOfWeek diaDaSemana)
-        {
-            bool isWeekend = false;
-            List<Pedido> pedido = new List<Pedido>();
-
-            // Verifica se a data é um dia útil ou fim de semana e calcula os valores
-            if (diaDaSemana == DayOfWeek.Saturday || diaDaSemana == DayOfWeek.Sunday)
+        {        
+            List<Pedido> pedidos = new List<Pedido>();
+                    
+          
+            foreach (var petshop in listPetShop)
             {
-                isWeekend = true;
-            };
-
-            foreach (var list in listPetShop)
-            {
-                double valorTotalPequeno;
-                double valorTotalGrande;
-
-                if (isWeekend)
-                {
-                    valorTotalPequeno = qtdPequeno * list.FdsPrecoPequeno;
-                    valorTotalGrande = qtdGrande * list.FdsPrecoGrande;
-                }
-                else
-                {
-                    valorTotalPequeno = qtdPequeno * list.DiaUtilPrecoPequeno;
-                    valorTotalGrande = qtdGrande * list.DiaUtilPrecoGrande;
-                }
-
-
-                pedido.Add(new Pedido
-                {
-                    QtdPequenos = qtdPequeno,
-                    QtdGrandes = qtdGrande,
-                    DiaDaSemana = diaDaSemana,
-                    ValorTotalPequeno = valorTotalPequeno,
-                    ValorTotalGrande = valorTotalGrande,
-                    Distancia = list.Distancia,
-                    ValorTotal = valorTotalGrande + valorTotalPequeno,
-                    NomePetShop = list.Nome
-
-                });
+                var pedido = petshop.CalcularPedido(diaDaSemana, qtdPequeno, qtdGrande);
+                pedidos.Add(pedido);
             };
 
             
-            double menorValor = pedido.Min(x => x.ValorTotal);
+            double menorValor = pedidos.Min(x => x.ValorTotal);
 
-            var listaMenorValor = pedido.Where(x => x.ValorTotal == menorValor);
+            var listaMenorValor = pedidos.Where(x => x.ValorTotal == menorValor);
 
             if (listaMenorValor.Count() > 1)
             {
-                var distanciaMinima = pedido.Min(x => x.Distancia);
-                listaMenorValor = pedido.Where(x => x.ValorTotal == menorValor && x.Distancia == distanciaMinima);
+                var distanciaMinima = pedidos.Min(x => x.Distancia);
+                listaMenorValor = pedidos.Where(x => x.ValorTotal == menorValor && x.Distancia == distanciaMinima);
                 return listaMenorValor;
 
             }
