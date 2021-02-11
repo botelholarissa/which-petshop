@@ -8,12 +8,12 @@ namespace EscolhaPetShop
 {
     public class PetShop
     {
-        public String nome;
-        public double distancia;
-        public double fdsPrecoPequeno;
-        public double diaUtilPrecoPequeno;
-        public double fdsPrecoGrande;
-        public double diaUtilPrecoGrande;
+        public String Nome;
+        public double Distancia;
+        public double FdsPrecoPequeno;
+        public double DiaUtilPrecoPequeno;
+        public double FdsPrecoGrande;
+        public double DiaUtilPrecoGrande;
 
     }
 }

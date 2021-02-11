@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\botel\\source\\repos\\EscolhaPetShop\\EscolhaPetShop\\EscolhaPetShop.csproj": {}
+    "C:\\Users\\botel\\source\\repos\\which-petshop\\EscolhaPetShop\\EscolhaPetShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\botel\\source\\repos\\EscolhaPetShop\\EscolhaPetShop\\EscolhaPetShop.csproj": {
+    "C:\\Users\\botel\\source\\repos\\which-petshop\\EscolhaPetShop\\EscolhaPetShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\botel\\source\\repos\\EscolhaPetShop\\EscolhaPetShop\\EscolhaPetShop.csproj",
+        "projectUniqueName": "C:\\Users\\botel\\source\\repos\\which-petshop\\EscolhaPetShop\\EscolhaPetShop.csproj",
         "projectName": "EscolhaPetShop",
-        "projectPath": "C:\\Users\\botel\\source\\repos\\EscolhaPetShop\\EscolhaPetShop\\EscolhaPetShop.csproj",
+        "projectPath": "C:\\Users\\botel\\source\\repos\\which-petshop\\EscolhaPetShop\\EscolhaPetShop.csproj",
         "packagesPath": "C:\\Users\\botel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\botel\\source\\repos\\EscolhaPetShop\\EscolhaPetShop\\obj\\",
+        "outputPath": "C:\\Users\\botel\\source\\repos\\which-petshop\\EscolhaPetShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\botel\\AppData\\Roaming\\NuGet\\NuGet.Config",

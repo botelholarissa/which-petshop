@@ -1,0 +1,16 @@
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.exe
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.deps.json
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.runtimeconfig.json
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.runtimeconfig.dev.json
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.dll
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\ref\EscolhaPetShop.dll
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\bin\Debug\net5.0\EscolhaPetShop.pdb
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.csprojAssemblyReference.cache
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.AssemblyInfoInputs.cache
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.AssemblyInfo.cs
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.csproj.CoreCompileInputs.cache
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.dll
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\ref\EscolhaPetShop.dll
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.pdb
+C:\Users\botel\source\repos\which-petshop\EscolhaPetShop\obj\Debug\net5.0\EscolhaPetShop.genruntimeconfig.cache

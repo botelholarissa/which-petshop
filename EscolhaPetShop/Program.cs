@@ -19,30 +19,30 @@ namespace EscolhaPetShop
             List<PetShop> listPetShop = new List<PetShop>()
             {
                 new PetShop {
-                    nome="Meu Canino Feliz",
-                    distancia = 2.0,
-                    diaUtilPrecoPequeno = 20.0,
-                    diaUtilPrecoGrande = 40.0,
-                    fdsPrecoPequeno = 20.0 + 20.0 * 0.2,
-                    fdsPrecoGrande = 40 + 40 * 0.2
+                    Nome="Meu Canino Feliz",
+                    Distancia = 2.0,
+                    DiaUtilPrecoPequeno = 20.0,
+                    DiaUtilPrecoGrande = 40.0,
+                    FdsPrecoPequeno = 20.0 + 20.0 * 0.2,
+                    FdsPrecoGrande = 40 + 40 * 0.2
                 },
 
                 new PetShop {
-                    nome = "Vai Rex",
-                    distancia = 1.7,
-                    diaUtilPrecoPequeno = 15.0,
-                    diaUtilPrecoGrande = 50.0,
-                    fdsPrecoPequeno = 20.0,
-                    fdsPrecoGrande = 55.00
+                    Nome = "Vai Rex",
+                    Distancia = 1.7,
+                    DiaUtilPrecoPequeno = 15.0,
+                    DiaUtilPrecoGrande = 50.0,
+                    FdsPrecoPequeno = 20.0,
+                    FdsPrecoGrande = 55.00
                 },
 
                 new PetShop {
-                    nome = "ChowChawgas",
-                    distancia = 0.8,
-                    diaUtilPrecoPequeno = 30.0,
-                    diaUtilPrecoGrande = 45.0,
-                    fdsPrecoPequeno = 30.0,
-                    fdsPrecoGrande = 45.0
+                    Nome = "ChowChawgas",
+                    Distancia = 0.8,
+                    DiaUtilPrecoPequeno = 30.0,
+                    DiaUtilPrecoGrande = 45.0,
+                    FdsPrecoPequeno = 30.0,
+                    FdsPrecoGrande = 45.0
                 }
             };
 
@@ -117,13 +117,13 @@ namespace EscolhaPetShop
 
                 if (isWeekend)
                 {
-                    valorTotalPequeno = qtdPequeno * list.fdsPrecoPequeno;
-                    valorTotalGrande = qtdGrande * list.fdsPrecoGrande;
+                    valorTotalPequeno = qtdPequeno * list.FdsPrecoPequeno;
+                    valorTotalGrande = qtdGrande * list.FdsPrecoGrande;
                 }
                 else
                 {
-                    valorTotalPequeno = qtdPequeno * list.diaUtilPrecoPequeno;
-                    valorTotalGrande = qtdGrande * list.diaUtilPrecoGrande;
+                    valorTotalPequeno = qtdPequeno * list.DiaUtilPrecoPequeno;
+                    valorTotalGrande = qtdGrande * list.DiaUtilPrecoGrande;
                 }
 
                 // Adiciona novo pedido
@@ -134,9 +134,9 @@ namespace EscolhaPetShop
                     DiaDaSemana = diaDaSemana,
                     ValorTotalPequeno = valorTotalPequeno,
                     ValorTotalGrande = valorTotalGrande,
-                    Distancia = list.distancia,
+                    Distancia = list.Distancia,
                     ValorTotal = valorTotalGrande + valorTotalPequeno,
-                    NomePetShop = list.nome
+                    NomePetShop = list.Nome
 
                 });
             };
