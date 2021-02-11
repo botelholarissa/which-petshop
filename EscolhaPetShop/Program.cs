@@ -10,12 +10,12 @@ namespace EscolhaPetShop
 
         public static void Main(string[] args)
         {
-            // Cria variáveis que serão utilizadas
+            // Inicialização de variáveis
             int qtdPequenos;
             int qtdGrandes;
             DayOfWeek diaDaSemana;
 
-            // Cria novos petshops e atribui informações
+            // Inicialização do objeto Petshop
             List<PetShop> listPetShop = new List<PetShop>()
             {
                 new PetShop {
@@ -46,7 +46,7 @@ namespace EscolhaPetShop
                 }
             };
 
-            // Atribui os métodos as variáveis criadas
+            // Leitura dos dados de entrada
             Console.WriteLine("Bora levar os doguinhos para tomar um banho?");
             diaDaSemana = LeituraDiaDaSemana();
             qtdPequenos = LeituraQtdCaes("pequenos");
@@ -67,12 +67,11 @@ namespace EscolhaPetShop
 
         private static int LeituraQtdCaes(string tamanhoCao)
         {
-            // Recebe a quantidade de cães
             Console.WriteLine($"Escreva a quantidade de cães {tamanhoCao}: ");
 
-            // Verifica se foi recebido um número inteiro
             bool conversaoOk = int.TryParse(Console.ReadLine(), out int returnQtdCaes);
             
+            // Valida se a entrada é válida
             if (!conversaoOk && returnQtdCaes == 0)
             {
                 Console.WriteLine("\nValor inválido, favor digitar um valor inteiro.");
@@ -126,7 +125,7 @@ namespace EscolhaPetShop
                     valorTotalGrande = qtdGrande * list.DiaUtilPrecoGrande;
                 }
 
-                // Adiciona novo pedido
+
                 pedido.Add(new Pedido
                 {
                     QtdPequenos = qtdPequeno,
@@ -141,7 +140,7 @@ namespace EscolhaPetShop
                 });
             };
 
-            // Encontra o menor valor
+            
             double menorValor = pedido.Min(x => x.ValorTotal);
 
             var listaMenorValor = pedido.Where(x => x.ValorTotal == menorValor);
