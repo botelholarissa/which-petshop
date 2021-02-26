@@ -17,7 +17,7 @@ do canil.
 ## Premissas
 
 O projeto deve ser desenvolvido na linguagem C# e bibliotecas nativas,  
-Foi usado o editor [Visual Studio]: (https://visualstudio.microsoft.com/pt-br/vs/community/),  
+Foi usado o editor (Visual Studio): [https://visualstudio.microsoft.com/pt-br/vs/community/],  
 Tempo de realização de até 3 dias.
 
 ## Decisões de projeto:
