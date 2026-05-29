@@ -1,6 +1,7 @@
 # which-petshop
 
 C# application that selects the most cost-effective pet shop based on pet size, bathing prices, day of the week, and distance.
+> Legacy academic/technical challenge project originally developed in Portuguese.
 
 ## Problem
 
